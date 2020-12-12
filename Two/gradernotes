@@ -1,6 +1,0 @@
-I based the start of my programs from exec1.c, fork2.c, dup2.c, and sighandler.c. Apart from that, all code was written by me.
-Everything works as intended, with the exception of the multiple pipelines not being able to do the middle commands, and also hereis currently doesn't work with a pipeline.
-What happens if I see echo hi> |? Currently my program proceeds to process '|' as the name of the output file.
-What happens if I see sort < foo << EoF? My program will provide an error message saying that we can't have multiple input redirections.
-Does p2 announce dollar-sign lookup errors? Yes it returns a null, it skips forking, and it moves on to the next line/prompt.
-Temporary 'hereis' file deleted? Yes, I did make sure to delete the file.
